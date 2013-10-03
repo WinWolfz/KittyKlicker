@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kitty Klicker!</title>
+<link rel="stylesheet" href="KittyClick.css">
+</head>
+<body data-ng-app="" class="center">
+<div data-ng-controller="KittyKlickerKontroller">
+<h1>Click the Kitty!</h1>
+<p><img data-ng-src="{{data.kittenImage}}" data-ng-click="increaseKittens()" data-ng-mousedown="showClickedKitten()" data-ng-mouseup="showUnclickedKitten()" data-ng-mouseleave="showUnclickedKitten()"></p>
+<p>Total Kittens: <span>{{data.kittens}}</span></p>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.min.js"></script>
+<script type="text/javascript" src="kittyclick.js"></script>
+</body>
+</html>
